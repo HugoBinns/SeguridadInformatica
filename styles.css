@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
+:root{
+    --background: #212529;
+    --div: #faf9f9;
+    --footer: #212529;
+}
+body{
+    background-color: var(--background);
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #212529;
+
+}
+#contenedor{
+    background-color: var(--div);
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFF;
+    height: auto;
+}
+
+.menu:hover .menu_link:not(:hover){
+    color: #495057;
+}
+
+.menu_list{
+    display: flex;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.menu_group{
+    flex-grow: 1;
+}
+
+.menu_link{
+    display: block;
+}
+
+.menu{
+    background-color: #212529;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.menu_link{
+    padding: 2rem 1.5rem;
+    font-weight: 700;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.menu_link:focus{
+    outline: 2px solid #fff;
+}
+
+.menu_link{
+    position: relative;
+    overflow: hidden;
+    will-change: color;
+    transition: color .25s ease-out;
+}
+
+.menu_link::before,
+.menu_link::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+
+    will-change: width;
+    transition: width .1s ease-out;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.menu_link::before{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu_link::after{
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.menu_link:hover::before,
+.menu_link:hover::after{
+    width: 100%;
+    transition-duration: 0.2s;
+}
+
+
+#contenido{
+    padding: 50px;
+    margin-left: 40px;
+    height: auto;
+}
+
+#Texto{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#imagen{
+    padding-left: 30px;
+}
+
+.formulario{
+    background-color: #000;
+    padding: 0px;
+    color: #FFF;
+    margin-left: 0px;
+    margin-right: 0px;
+    float: 0px;
+}
+
+
+
+footer{
+    background-color: var(--footer);
+    text-align: center;
+    margin: 0px;
+    padding: 30px;
+    color:#FFF
+}
